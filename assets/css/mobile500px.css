@@ -1,0 +1,118 @@
+@media screen and (max-width: 500px) {
+  header .textbox_header {
+    width: 100%;
+  }
+  header .textbox_header h1 {
+    font-size: 3rem;
+  }
+  main section h2 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  main section img {
+    top: 60%;
+    width: 50%;
+  }
+  main article div {
+    width: 90%;
+  }
+  main article div h2 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  main article div p:nth-of-type(1) {
+    padding-bottom: 25vh;
+  }
+  main article div p:nth-of-type(2) {
+    padding-bottom: 20vh;
+  }
+  main article img:nth-of-type(1) {
+    top: -20%;
+  }
+  main article img:nth-of-type(2) {
+    top: -10%;
+  }
+  main article img:nth-of-type(3) {
+    top: 28%;
+  }
+  main article img:nth-of-type(4) {
+    top: 32%;
+  }
+  main article img:nth-of-type(5) {
+    top: 39%;
+  }
+  main article img:nth-of-type(6) {
+    top: 44%;
+  }
+  main article img:nth-of-type(7) {
+    top: 80%;
+  }
+  main .OOone .black_background {
+    top: -10vh;
+    height: 110vh;
+  }
+  main .OOone .textbox_main {
+    display: block;
+  }
+  main .OOone .textbox_main div h3 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  main .OOone .textbox_main .textbox-right {
+    width: 100%;
+  }
+  main .OOone-images img:nth-of-type(1) {
+    top: 5vh;
+  }
+  main .OOone-images img:nth-of-type(2) {
+    top: 13vh;
+  }
+  main .OOone-images img:nth-of-type(3) {
+    width: 45vw;
+    top: 25vh;
+  }
+  main .space {
+    height: 60vh;
+  }
+  main .OOtwo .grey_background {
+    height: 110vh;
+  }
+  main .OOtwo .textbox_main {
+    display: block;
+  }
+  main .OOtwo .textbox_main div h3 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  main .OOtwo .textbox_main .textbox-right {
+    width: 100%;
+  }
+  main .OOtwo-images img:nth-of-type(1) {
+    top: 70vh;
+  }
+  main .OOtwo-images img:nth-of-type(2) {
+    top: 75vh;
+  }
+  footer {
+    top: 110vh;
+    padding-top: 5vh;
+  }
+  footer .footer-textbox {
+    width: 100%;
+  }
+  footer .footer-flex .line {
+    top: -50vh;
+    right: 0%;
+    font-size: 3rem;
+  }
+  @keyframes textscroll {
+    0%, 100% {
+      transform: rotate(0deg) translateX(60%);
+    }
+    50% {
+      transform: rotate(0deg) translateX(0%);
+    }
+  }
+}
+
+/*# sourceMappingURL=mobile500px.css.map */

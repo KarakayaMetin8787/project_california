@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url(./../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-inline: 5%;
+    .line_top {
+        border: 1px solid rgba(255, 255, 255, 0.302);
+        height: 150px;
+        width: 1px;
+        margin-left: 50%;
+    }
+    .textbox_header {
+        width: 35vw;
+        height: 15vh;
+        margin: 5px auto 20% auto;
+        h1 {
+            font-family: inter;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+            span {
+                text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+                color: black;
+            }
+        }
+        p {
+            font-family: work-sans;
+            font-size: 0.75rem;
+            font-weight: 400;
+            padding:12px 0 17px 0 ;
+        }
+    }
+    .header_bottom {
+        display: flex;
+        justify-content: space-between;
+        button {
+            color: white;
+            background-color: #000000;
+            border: 1px solid #AAAAAA;
+            padding: 10px 30px;
+            font-family: work-sans;
+            font-weight: 400;
+            font-size: 1.3rem;
+            transition: all 0.2s;
+        }
+        button:hover {
+            color: black;
+            background-color: #AAAAAA;
+        }
+    }
+}
+
+main {
+    section {
+        background-color: black;
+        color: white;
+        padding:10% 10% 5% 5%;
+        position: relative;
+        h2 {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 108px;
+            font-family: inter;
+            padding-block: 1.5rem;
+            &:nth-of-type(1) {
+                padding-bottom: 10%;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-family: work-sans;
+            font-size: 0.875rem;
+        }
+        img {
+            position: absolute;
+            top: 47%;
+            width: 30%;
+            right: 0;
+        }
+    }
+    article {
+        position: relative;
+        div {
+            width: 32%;
+            margin: 30% auto 0 auto;
+            position: relative;
+            h2 {
+                font-weight: 700;
+                line-height: 82.29px;
+                font-family: inter;
+                font-size: 5.2rem;
+            }
+            p {
+                font-family: work-sans;
+                font-weight: 400;
+                line-height: 29.62px;
+                font-size: 1rem;
+                &:nth-of-type(1){
+                    padding: 5px 0 90vh 0;
+                }
+                &:nth-of-type(2){
+                    padding-bottom: 60vh;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            width: 25%;
+            &:nth-of-type(1){
+                top: -30%;
+                right: 6%;
+            }
+            &:nth-of-type(2){
+                top: -10%;
+                left: 5%;
+                width: 20%;
+            }
+            &:nth-of-type(3){
+                top: 13%;
+                right: 0%;
+                width: 20%;
+            }
+            &:nth-of-type(4){
+                top: 25%;
+                left: 16%;
+            }
+            &:nth-of-type(5){
+                top: 40%;
+                right: 10%;
+            }
+            &:nth-of-type(6){
+                top: 58%;
+                left: 0%;
+                width: 20%;
+            }
+            &:nth-of-type(7){
+                top: 75%;
+                right: 20%;
+                width: 30%;
+                z-index: -2;
+            }
+        }
+    }
+    .OOone {
+        position: relative;
+        color: white;
+        .black_background {
+            background-color: black;
+            height: 150vh;
+            width: 100%;
+            position: absolute;
+            top: -25vh;
+            z-index: -1;
+        }
+        .textbox_main {
+            display: flex;
+            padding-inline: 5%;
+            div {
+                .number {
+                    font-family: work-sans;
+                    font-weight: 400;
+                    font-size: 1.234rem;
+                    padding-bottom: 20px;
+                }
+                h3 {
+                    font-family: inter;
+                    line-height: 82.29px;
+                    font-weight: 700;
+                    font-size: 5.2rem;
+                }
+            }
+            .text {
+                font-family: inter;
+                font-weight: 700;
+                line-height: 32.92px;
+                font-size: 1.8rem;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+            .artist {
+                font-family: work-sans;
+                line-height: 29.62px;
+                font-weight: 400;
+                font-size: 1.15rem;
+            }
+            .textbox-left {
+                width: 20%;
+                padding-right: 45vw;
+            }
+            .textbox-right {
+                width: 40%;
+            }
+        }
+    }
+    .OOone-images {
+        position: relative;
+        overflow-x: clip;
+        img {
+            position: absolute;
+            &:nth-of-type(1){
+                width: 60vw;
+                left: 5%;
+                top: 15vh;
+            }
+            &:nth-of-type(2){
+                width: 30vw;
+                left: 55%;
+                top: 35vh;
+            }
+            &:nth-of-type(3){
+                width: 35vw;
+                top: 75vh;
+                right: -10vw;
+                z-index: -1;
+                animation-name: rotation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+    .space {
+        height: 140vh;
+    }
+    .OOtwo {
+        color: black;
+        position: relative;
+        .grey_background {
+            background-color: rgb(232, 231, 231);
+            height: 160vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .textbox_main {
+            display: flex;
+            padding-inline: 5%;
+            padding-top: 2rem;
+            div {
+                .number {
+                    font-family: work-sans;
+                    font-weight: 400;
+                    font-size: 1.234rem;
+                    padding-bottom: 20px;
+                }
+                h3 {
+                    font-family: inter;
+                    line-height: 82.29px;
+                    font-weight: 700;
+                    font-size: 5.2rem;
+                }
+            }
+            .text {
+                font-family: inter;
+                font-weight: 700;
+                line-height: 32.92px;
+                font-size: 1.8rem;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+            .artist {
+                font-family: work-sans;
+                line-height: 29.62px;
+                font-weight: 400;
+                font-size: 1.15rem;
+            }
+            .textbox-left {
+                width: 20%;
+                padding-right: 45vw;
+            }
+            .textbox-right {
+                width: 40%;
+            }
+        }
+    }
+    .OOtwo-images {
+        position: relative;
+        img {
+            position: absolute;
+            &:nth-of-type(1){
+                width: 60vw;
+                right: 5%;
+                top: 50vh;
+            }   
+            &:nth-of-type(2){
+                width: 30vw;
+                left: 10%;
+                top: 70vh;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 160vh;
+    overflow: hidden;
+    .footer-textbox {
+        width: 40%;
+        padding-left: 5%;
+        padding-block: 5%;
+        p {
+            font-family: work-sans;
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+        h4 {
+            font-family: inter;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 46px;
+            padding-block: 1.5rem;
+        }
+        button {
+            color: white;
+            background-color: #000000;
+            border: 1px solid #AAAAAA;
+            padding: 10px 30px;
+            font-family: work-sans;
+            font-weight: 400;
+            font-size: 1.3rem;
+            transition: all 0.2s;
+        }
+        button:hover {
+            color: black;
+            background-color: #AAAAAA;
+        }
+    }
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 5% 15%;
+        position: relative;
+        .social {
+            img {
+                width: 20px;
+                padding-bottom: 10px;
+            }
+            p {
+                font-family: work-sans;
+                padding-bottom: 10px;
+                font-weight: 400;
+                font-size: 0.75rem;
+            }
+        }
+        .footer-end {
+            img {
+                width: 60px;
+            }
+        }
+        .line {
+            position: absolute;
+            top: -90vh;
+            right: -50%;
+            background-color: white;
+            color: #000000;
+            font-size: 6rem;
+            animation-name: textscroll;
+            animation-duration: 15s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            text-wrap: nowrap;
+            span {
+                text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes textscroll {
+    0%, 100% {
+        transform: rotate(45deg) translateX(60%);
+    }
+    50% {
+        transform: rotate(45deg) translateX(0%);
+    }
+}
